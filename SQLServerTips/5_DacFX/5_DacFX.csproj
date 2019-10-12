@@ -6,4 +6,8 @@
     <RootNamespace>_5_DacFX</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SqlServer.DACFx" Version="150.4534.2-preview" />
+  </ItemGroup>
+
 </Project>
