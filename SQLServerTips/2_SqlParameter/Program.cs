@@ -18,7 +18,7 @@ namespace _2_SqlParameter
             // パラメータの型や長さを指定せず_Dapper();
             // パラメータの型や長さを指定する_Dapper();
             Console.WriteLine("終わり");
-            /*
+            /* https://qiita.com/itito/items/22fabe94d1fc0c881d1c
 SELECT
     o.[name] AS [オブジェクト名]
     , p.[bucketid]
