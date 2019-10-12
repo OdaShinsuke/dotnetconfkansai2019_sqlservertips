@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.SqlClient;
+using Dapper;
 
 namespace _2_SqlParameter
 {
@@ -14,6 +15,8 @@ namespace _2_SqlParameter
             // パラメータの長さを指定して違う長さの文字列();
             // 文字型に数値を渡す();
             // 数値型に文字列を渡す();
+            // パラメータの型や長さを指定せず_Dapper();
+            // パラメータの型や長さを指定する_Dapper();
             Console.WriteLine("終わり");
             /*
 SELECT
@@ -113,6 +116,21 @@ ORDER BY
                 cmd.Parameters.AddWithValue("intvar", "12");
                 conn.Open();
                 cmd.ExecuteReader();
+            }
+        }
+
+        static void パラメータの型や長さを指定せず_Dapper()
+        {
+            using (var conn = new SqlConnection(connstr))
+            {
+                conn.Query(@"select * from [Hoge] where [var] = @var", new { var = "12" });
+            }
+        }
+        static void パラメータの型や長さを指定する_Dapper()
+        {
+            using (var conn = new SqlConnection(connstr))
+            {
+                conn.Query(@"select * from [Hoge] where [var] = @var", new { var = new DbString { Value = "12", IsAnsi = true, IsFixedLength = false, Length = 20 } });
             }
         }
     }
