@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4_Retry", "4_Retry\4_Retry.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5_DacFX", "5_DacFX\5_DacFX.csproj", "{F15284AE-BB38-41FA-BD53-96141E8D6CA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_Retry_NETFramework", "4_Retry_NETFramework\4_Retry_NETFramework.csproj", "{1A91E432-9AE0-41E4-8C43-BA0283AB5B83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F15284AE-BB38-41FA-BD53-96141E8D6CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F15284AE-BB38-41FA-BD53-96141E8D6CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F15284AE-BB38-41FA-BD53-96141E8D6CA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A91E432-9AE0-41E4-8C43-BA0283AB5B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A91E432-9AE0-41E4-8C43-BA0283AB5B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A91E432-9AE0-41E4-8C43-BA0283AB5B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A91E432-9AE0-41E4-8C43-BA0283AB5B83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,7 +3,7 @@ using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Reflection;
 
-namespace _4_Retry_Core
+namespace _4_Retry_NETFramework
 {
     class Program
     {
@@ -12,7 +12,7 @@ namespace _4_Retry_Core
 
         static void Main(string[] args)
         {
-            // リトライの設定デフォルト();
+            リトライの設定デフォルト();
             // Open中にサービス再起動_リトライ0回();
             // Open中にサービス再起動_リトライ5回インターバル5秒();
             Console.WriteLine("終わり");
